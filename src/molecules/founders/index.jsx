@@ -17,7 +17,7 @@ export default function Founders() {
     },
     {
       id: 2,
-      name: "Hade",
+      name: "Hadi",
       title: "Founder",
       imgAlt: "",
       imgSrc: teamMember001,
