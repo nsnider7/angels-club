@@ -1,7 +1,9 @@
 import "./index.css";
 
-import angel001 from "../../assets/art/angel001.png";
-import angel002 from "../../assets/art/angel002.png";
+import angel001 from "../../assets/art/1.jpg";
+import angel002 from "../../assets/art/2.jpg";
+import angel003 from "../../assets/art/5.jpg";
+import angel004 from "../../assets/art/4.jpg";
 
 export default function TheArt() {
   return (
@@ -31,7 +33,7 @@ export default function TheArt() {
         <li>
           <img
             className="the-art-gallery-item"
-            src={angel001}
+            src={angel003}
             width="313"
             height="313"
             alt=""
@@ -41,7 +43,7 @@ export default function TheArt() {
         <li>
           <img
             className="the-art-gallery-item"
-            src={angel002}
+            src={angel004}
             width="313"
             height="313"
             alt=""

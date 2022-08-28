@@ -1,6 +1,6 @@
 import "./index.css";
 
-import johnDoe from "../../assets/founders/joe.png";
+import teamMember004 from "../../assets/art/1.jpg";
 import teamMember001 from "../../assets/founders/team-member001.png";
 import teamMember002 from "../../assets/founders/team-member002.png";
 import teamMember003 from "../../assets/founders/team-member003.png";
@@ -12,7 +12,7 @@ export default function Founders() {
       name: "Karim",
       title: "Founder",
       imgAlt: "",
-      imgSrc: johnDoe,
+      imgSrc: teamMember004,
       bio: "The angels are the guardians of the universe, starting off with the highest order of angels and moving onto the lowest order. We are the guardians of the metaverse willing to protect our members as well as non members. Our angels will spread their wings among all the NFT holders and more.",
     },
     {
