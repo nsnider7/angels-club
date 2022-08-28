@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: var(--color-blue-90);
+  box-shadow: var(--color-footer-box-shadow);
+  color: var(--color-neutral-inverted);
+  font-size: var(--typography-size-small-medium);
+  margin-top: var(--layout-spacing-large);
+  padding-bottom: var(--layout-spacing-medium);
+  text-align: center;
+}

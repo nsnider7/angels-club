@@ -1,0 +1,40 @@
+.main-nav {
+  font-family: var(--typography-font-family-headings);
+  font-size: var(--typography-size-default);
+  max-width: 100%;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .main-nav {
+    font-size: var(--typography-size-small-medium);
+  }
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-nav ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--layout-spacing-default);
+  justify-content: center;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .main-nav ul {
+    justify-content: space-between;
+  }
+}
+
+.main-nav li {
+  min-width: 5em;
+  text-align: center;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .main-nav li {
+    min-width: initial;
+  }
+}

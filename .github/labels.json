@@ -1,0 +1,37 @@
+[
+  {
+    "name": "p0",
+    "color": "#F20544",
+    "description": "takes precedence over everything else"
+  },
+  {
+    "name": "p1",
+    "color": "#F2055C",
+    "description": "top priority if no p0"
+  },
+  {
+    "name": "p2",
+    "color": "#A6032F",
+    "description": "next priority after all p1 issues are done"
+  },
+  {
+    "name": "p3",
+    "color": "#F2AA80",
+    "description": "low priority or nice to have"
+  },
+  {
+    "name": "p4",
+    "color": "#B9BF04",
+    "description": "nice to have"
+  },
+  {
+    "name": "bug",
+    "color": "#d73a4a",
+    "description": "something isn’t working"
+  },
+  {
+    "name": "chore",
+    "color": "#fef2c0",
+    "description": "a routine task"
+  }
+]

@@ -1,0 +1,58 @@
+.icon::before,
+.icon::after {
+  background-color: var(--color-neutral-inverted);
+  background-position: center;
+  background-repeat: no-repeat;
+  mask-size: cover;
+  content: "";
+  display: block;
+  height: 2em;
+  width: 2em;
+}
+
+.icon::after {
+  display: none;
+}
+
+.icon-twitter::before {
+  mask-image: url("../../assets/icons/twitter.svg");
+}
+
+.icon-discord::before {
+  mask-image: url("../../assets/icons/discord.svg");
+}
+
+.icon-opensea::before {
+  mask-image: url("../../assets/icons/opensea.svg");
+}
+
+.icon-instagram::before {
+  mask-image: url("../../assets/icons/instagram.svg");
+}
+
+.icon-stars.position-default::before {
+  left: -0.5em;
+  mask-image: url("../../assets/icons/stars.svg");
+  position: absolute;
+  top: -0.5em;
+}
+
+.icon-stars.position-top-right::after {
+  display: block;
+  mask-image: url("../../assets/icons/stars.svg");
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+}
+
+.icon-stars.position-top-right::before {
+  display: none;
+}
+
+.icon-stars.position-bottom-left::before {
+  bottom: -0.5em;
+  display: block;
+  left: -0.5em;
+  mask-image: url("../../assets/icons/stars.svg");
+  position: absolute;
+}

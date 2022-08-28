@@ -1,0 +1,16 @@
+.logo {
+  background: transparent url("../../assets/logo.png") center center no-repeat;
+  background-size: contain;
+  display: block;
+  height: 180px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .logo {
+    background-image: url("../../assets/logo@2x.png");
+    height: 308px;
+    width: 548px;
+  }
+}

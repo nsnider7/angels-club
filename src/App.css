@@ -1,0 +1,55 @@
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: var(--layout-spacing-default);
+}
+
+@media screen and (min-width: 47.9375em) {
+  .page-wrapper {
+    max-width: var(--layout-max-page-width);
+    padding: var(--layout-spacing-medium);
+  }
+}
+
+.hero-video {
+  display: none;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .hero-video {
+    animation: fader 10s ease-in-out forwards infinite;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(14, 0, 53, 0.5),
+      rgba(0, 0, 0, 1)
+    );
+    background-size: 100%;
+    display: block;
+    filter: blur(0.7rem);
+    height: 120vh;
+    left: -5rem;
+    opacity: 0.5;
+    position: absolute;
+    top: -5rem;
+    width: 100vw;
+    /* z-index: -1; */
+  }
+}
+
+@keyframes fader {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
+}

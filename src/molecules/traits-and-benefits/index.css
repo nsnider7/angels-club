@@ -1,0 +1,22 @@
+.traits-benefits-title {
+  color: var(--color-yellow-50);
+}
+
+.traits-benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--layout-spacing-medium);
+}
+
+.traits-benefits-list li {
+  background-color: rgba(73, 76, 82, 0.7);
+  flex: 1 1 100%;
+  padding: var(--layout-spacing-medium);
+  position: relative;
+}
+
+@media screen and (min-width: 63.9375em) {
+  .traits-benefits-list li {
+    flex: 1 1 40%;
+  }
+}

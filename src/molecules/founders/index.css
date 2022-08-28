@@ -1,0 +1,33 @@
+.founders-title {
+  background-color: var(--color-yellow-50);
+  color: var(--color-blue-90);
+  margin-bottom: var(--layout-spacing-narrow);
+  padding: var(--layout-spacing-narrow);
+}
+
+.founder-profile-header {
+  text-align: center;
+}
+
+.founder-profile-img-container {
+  background-color: var(--color-yellow-50);
+  border-radius: var(--border-radius-circular);
+  height: 280px;
+  margin: 0 auto;
+  width: 280px;
+}
+
+.founder-profile-img {
+  border-radius: var(--border-radius-circular);
+  height: 250px;
+  margin-left: 2em;
+  width: 250px;
+}
+
+.founders-list p {
+  font-size: var(--typography-size-small-medium);
+}
+
+.founders-list .readable-line-length {
+  margin: var(--layout-spacing-default) auto;
+}

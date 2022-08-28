@@ -1,0 +1,60 @@
+.faq-title {
+  font-size: var(--typography-size-xl);
+  margin-bottom: var(--layout-spacing-narrow);
+}
+
+.faq-list {
+  background-color: rgba(73, 76, 82, 0.7);
+  border-radius: 1rem;
+  padding: var(--layout-spacing-default);
+}
+
+.faq-list li {
+  margin-bottom: var(--layout-spacing-default);
+}
+
+.faq-item-container {
+  font-size: var(--typography-size-small-medium);
+}
+
+.faq-question {
+  align-items: center;
+  background-color: var(--color-yellow-50);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  color: var(--color-blue-90);
+  cursor: pointer;
+  display: flex;
+  font-weight: normal;
+  justify-content: space-between;
+  list-style: none; /* hide default arrow in most modern browsers */
+  padding: var(--layout-spacing-narrow);
+  text-transform: uppercase;
+}
+
+/* hide default arrow in older browsers */
+/* NOTE: None of this works in Safari the element is contained inside a ShadowRoot */
+.faq-question::-webkit-display-marker,
+.faq-question::marker {
+  display: none;
+}
+
+.faq-question::after {
+  background: var(--color-blue-90) url("../../assets/icons/arrow-bar-up.svg")
+    center center no-repeat;
+  background-size: 1rem;
+  border-radius: 1rem;
+  content: "";
+  display: block;
+  flex: 0 0 1rem;
+  height: 1rem;
+  padding: var(--layout-spacing-narrow);
+}
+
+.faq-item-container[open] .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-item-container p {
+  margin: var(--layout-spacing-default);
+}
