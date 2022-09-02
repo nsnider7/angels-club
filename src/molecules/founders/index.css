@@ -5,6 +5,32 @@
   padding: var(--layout-spacing-narrow);
 }
 
+.founders-list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: var(--layout-spacing-large);
+  justify-content: center;
+  margin: var(--layout-spacing-large) 0;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .founders-list {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: var(--layout-spacing-large) auto;
+    max-width: 80vw;
+  }
+}
+
+@media screen and (min-width: 89.9375em) {
+  .founders-list {
+    justify-content: space-between;
+    max-width: initial;
+  }
+}
+
 .founder-profile-header {
   text-align: center;
 }
@@ -24,10 +50,11 @@
   width: 250px;
 }
 
-.founders-list p {
-  font-size: var(--typography-size-small-medium);
+.member-name,
+.member-title {
+  margin: 0;
 }
 
-.founders-list .readable-line-length {
-  margin: var(--layout-spacing-default) auto;
+.member-name {
+  margin: 0;
 }

@@ -2,33 +2,26 @@
   color: var(--color-yellow-50);
 }
 
-.the-art-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--layout-spacing-medium);
-  justify-content: center;
-}
-
-@media screen and (min-width: 63.9375em) {
-  .the-art-gallery {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-  }
-}
-
-.the-art-gallery li {
-  flex: 1 1 45%;
-}
-
-@media screen and (min-width: 63.9375em) {
-  .the-art-gallery li {
-    flex: 1 1 auto;
-  }
-}
-
 .the-art-gallery-item {
   border: 10px solid var(--color-yellow-50);
   border-radius: var(--border-radius-circular);
   height: auto;
   max-width: 100%;
+  width: 300px;
+}
+
+@media screen and (min-width: 47.9375em) {
+  .the-art-gallery-item {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 63.9375em) {
+  .the-art-gallery-item {
+    width: 240px;
+  }
+}
+
+.the-art-carousel-paging {
+  display: none;
 }

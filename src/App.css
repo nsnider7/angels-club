@@ -17,34 +17,20 @@
 
 @media screen and (min-width: 63.9375em) {
   .hero-video {
-    animation: fader 10s ease-in-out forwards infinite;
     background-image: linear-gradient(
       to bottom,
       rgba(14, 0, 53, 0.5),
-      rgba(0, 0, 0, 1)
+      rgba(45, 38, 65, 1)
     );
     background-size: 100%;
     display: block;
-    filter: blur(0.7rem);
-    height: 120vh;
-    left: -5rem;
-    opacity: 0.5;
+    filter: opacity(30%) blur(16px) drop-shadow(16px 16px 10px #2d2641);
+    height: 100vh;
+    left: -1rem;
+    opacity: 0.3;
     position: absolute;
-    top: -5rem;
+    top: 0;
     width: 100vw;
-    /* z-index: -1; */
-  }
-}
-
-@keyframes fader {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
