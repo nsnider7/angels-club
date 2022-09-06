@@ -2,26 +2,15 @@
   color: var(--color-yellow-50);
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--color-neutral-inverted);
+}
+
 .the-art-gallery-item {
   border: 10px solid var(--color-yellow-50);
   border-radius: var(--border-radius-circular);
   height: auto;
   max-width: 100%;
   width: 300px;
-}
-
-@media screen and (min-width: 47.9375em) {
-  .the-art-gallery-item {
-    width: 200px;
-  }
-}
-
-@media screen and (min-width: 63.9375em) {
-  .the-art-gallery-item {
-    width: 240px;
-  }
-}
-
-.the-art-carousel-paging {
-  display: none;
 }
