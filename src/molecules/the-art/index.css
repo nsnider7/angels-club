@@ -11,6 +11,7 @@
   border: 10px solid var(--color-yellow-50);
   border-radius: var(--border-radius-circular);
   height: auto;
+  margin: 0 auto;
   max-width: 100%;
   width: 300px;
 }
