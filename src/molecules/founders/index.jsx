@@ -13,7 +13,6 @@ export default function Founders() {
       title: "Founder",
       imgAlt: "",
       imgSrc: teamMember004,
-      bio: "",
     },
     {
       id: 2,
@@ -21,21 +20,21 @@ export default function Founders() {
       title: "Founder",
       imgAlt: "",
       imgSrc: teamMember001,
-      bio: "",    },
+    },
     {
       id: 3,
       name: "Jack",
       title: "Artist",
       imgAlt: "",
       imgSrc: teamMember002,
-      bio: "",    },
+    },
     {
       id: 4,
       name: "Nick",
       title: "Developer",
       imgAlt: "",
       imgSrc: teamMember003,
-      bio: "",    },
+    },
   ];
   return (
     <div id="founders" className="founder-container">
@@ -55,16 +54,12 @@ export default function Founders() {
                   src={member.imgSrc}
                 />
               </div>
-              <h4>
-                {member.name} <br />
-                {member.title}
-              </h4>
+              <h4 className="member-name">{member.name}</h4>
+              <p className="member-title">{member.title}</p>
             </div>
-            <p className="readable-line-length">{member.bio}</p>
           </li>
         ))}
       </ul>
     </div>
-
   );
 }
