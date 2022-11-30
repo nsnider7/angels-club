@@ -1,0 +1,30 @@
+.about-container h1,
+.about-container .featured-title {
+  color: var(--color-yellow-50);
+}
+
+@media screen and (min-width: 63.9375em) {
+  .about-container h1,
+  .about-container .featured-title {
+    margin-bottom: 0;
+  }
+}
+
+.about-container p {
+  font-size: var(--typography-size-small-medium);
+}
+
+@media screen and (min-width: 63.9375em) {
+  .about-container p {
+    font-size: var(--typography-size-medium);
+  }
+}
+
+.about-container .button-cta {
+  margin: var(--layout-spacing-medium) auto var(--layout-spacing-default);
+  max-width: max-content;
+}
+/* /////// */
+/* .about-container .selector {
+  text-align: center;
+} */

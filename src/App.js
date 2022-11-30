@@ -1,5 +1,6 @@
 import Header from "./organisms/header";
 import About from "./molecules/about";
+import Mint from "./molecules/mint";
 import TraitsAndBenefits from "./molecules/traits-and-benefits";
 import Roadmap from "./molecules/roadmap";
 import TheArt from "./molecules/the-art";
@@ -18,6 +19,7 @@ function App() {
         <Header />
         <main>
           <About />
+          <Mint/>
           <TraitsAndBenefits />
           <Roadmap />
           <TheArt />
@@ -26,9 +28,9 @@ function App() {
         </main>
       </div>
       <Footer />
-      <video className="hero-video" autoPlay loop muted>
+      {/* <video className="hero-video" autoPlay loop muted>
         <source src={videoSrc} type="video/mp4" />
-      </video>
+      </video> */}
     </>
   );
 }
