@@ -19,7 +19,7 @@ export default function About() {
       <p>
         <Button
           extraClasses="button-cta button-icon icon icon-discord"
-          href="https://discord.gg"
+          href="https://discord.gg/84DrHhpbkm"
           label="join discord"
           type="link-external"
         />

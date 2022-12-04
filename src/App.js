@@ -1,13 +1,12 @@
 import Header from "./organisms/header";
 import About from "./molecules/about";
+import Mint from "./molecules/mint";
 import TraitsAndBenefits from "./molecules/traits-and-benefits";
 import Roadmap from "./molecules/roadmap";
 import TheArt from "./molecules/the-art";
 import Founders from "./molecules/founders";
 import FAQ from "./molecules/faq";
 import Footer from "./organisms/footer";
-
-import videoSrc from "./assets/smoke720.mp4";
 
 import "./App.css";
 
@@ -18,6 +17,7 @@ function App() {
         <Header />
         <main>
           <About />
+          <Mint/>
           <TraitsAndBenefits />
           <Roadmap />
           <TheArt />
@@ -26,9 +26,6 @@ function App() {
         </main>
       </div>
       <Footer />
-      <video className="hero-video" autoPlay loop muted>
-        <source src={videoSrc} type="video/mp4" />
-      </video>
     </>
   );
 }

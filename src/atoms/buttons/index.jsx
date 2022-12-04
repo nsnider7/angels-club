@@ -1,8 +1,8 @@
 import "./index.css";
 
-export default function Button({ extraClasses, href, label, type }) {
+export default function Button({ extraClasses, href, label, type, onclick }) {
   // this will catch both the link and external-link types
-  if (type.toLowerCase().includes("link")) {
+  if (type && type.toLowerCase().includes("link")) {
     const externalProps = {
       target: "_blank",
       rel: "noopener noreferrer",
@@ -18,9 +18,8 @@ export default function Button({ extraClasses, href, label, type }) {
 
     return <a {...linkProps}>{label}</a>;
   }
-
   return (
-    <button type={type} className={`button ${extraClasses || ""}`}>
+    <button type={type} className={`button ${extraClasses || ""}`} onClick={onclick}>
       {label}
     </button>
   );
