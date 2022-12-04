@@ -28,9 +28,6 @@ function App() {
         </main>
       </div>
       <Footer />
-      {/* <video className="hero-video" autoPlay loop muted>
-        <source src={videoSrc} type="video/mp4" />
-      </video> */}
     </>
   );
 }

@@ -25,6 +25,20 @@
   max-width: max-content;
 }
 /* /////// */
-/* .about-container .selector {
+.about-container .selector {
   text-align: center;
-} */
+}
+
+input[type=text] {
+  padding: 10px;
+  border: 5px solid var(--color-yellow-20);
+  border-radius: 10px;
+  height: 60px;
+  width: 14em;
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+h4 {
+  margin-bottom: 10px !important;
+}
