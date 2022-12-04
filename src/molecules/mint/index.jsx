@@ -6,7 +6,6 @@ import Web3Modal from "web3modal";
 import WalletConnectProvider from "@walletconnect/web3-provider";
 
 import "./index.css";
-import "react-css-dropdown/dist/index.css";
 
 let mintingApp;
 let contract;
