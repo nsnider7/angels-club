@@ -1,5 +1,5 @@
 import Button from "../../atoms/buttons";
-import React, { useState, Component } from "react";
+import React, { Component } from "react";
 import { CONTRACT_ABI } from './contractABI'
 import Web3 from 'web3';
 import Web3Modal from "web3modal";
@@ -87,12 +87,12 @@ class Minting extends Component {
       return true
       
       } else{
-        mintingApp.setState({selectedAccount: "Please connect your wallet" + ` ❌`} )
+        mintingApp.setState({selectedAccount: "Please connect your wallet ❌"} )
         return false
       }
   } catch(err) {
       console.log(err)
-      mintingApp.setState({selectedAccount: "Please connect your wallet" + ` ❌`} )
+      mintingApp.setState({selectedAccount: "Please connect your wallet ❌"} )
       return false
   }
   }
@@ -109,7 +109,7 @@ class Minting extends Component {
         value: valueToSend, 
       };
     try {
-        let testCall = await contract.methods.mint(quantity).call(transactionParameters)
+        await contract.methods.mint(quantity).call(transactionParameters)
         return ""
 
     } catch (err) {
@@ -132,13 +132,12 @@ class Minting extends Component {
       let currentGasPriceWei = await web3.eth.getGasPrice()
       let mintPrice = await contract.methods.NFT_PRICE().call()
       const saleLive = await contract.methods.saleLive().call()
-      const presaleLive = await contract.methods.presaleLive().call()
 
 
       let transactionParameters = {}
       let valueToSend = mintPrice * quantity;
       let testCall = await mintingApp.testMint(quantity, valueToSend, currentGasPriceWei);
-      if ((presaleLive || saleLive) && testCall === "") {
+      if (saleLive && testCall === "") {
         transactionParameters = {
           to: contractAddress, // Required except during contract publications.
           from: mintingApp.state.selectedAccount, // must match user's active address.
@@ -182,7 +181,7 @@ class Minting extends Component {
         value: valueToSend, 
       };
     try {
-        let testCall = await contract.methods.whitelistMint(quantity).call(transactionParameters)
+        await contract.methods.whitelistMint(quantity).call(transactionParameters)
         return ""
   
     } catch (err) {
@@ -201,14 +200,13 @@ class Minting extends Component {
       // let amountMinted = await contract.methods.addressMinted(mintingApp.state.selectedAccount).call()
       let currentGasPriceWei = await web3.eth.getGasPrice()
       let mintPrice = await contract.methods.NFT_WHITELIST_PRICE().call()
-      const saleLive = await contract.methods.saleLive().call()
       const presaleLive = await contract.methods.presaleLive().call()
 
 
       let transactionParameters = {}
       let valueToSend = mintPrice * quantity;
       let testCall = await mintingApp.testWhitelistMint(quantity, valueToSend, currentGasPriceWei);
-      if ((presaleLive) && testCall === "") {
+      if (presaleLive && testCall === "") {
         transactionParameters = {
           to: contractAddress, // Required except during contract publications.
           from: mintingApp.state.selectedAccount, // must match user's active address.
@@ -234,7 +232,7 @@ class Minting extends Component {
 
       if (error && error.message) {
         console.log(error.message)
-        if (error.message == "MetaMask Tx Signature: User denied transaction signature.") {
+        if (error.message === "MetaMask Tx Signature: User denied transaction signature.") {
           mintingApp.setState({submitError : `Transaction Rejected`})
         } else {
           mintingApp.setState({submitError : "Mint Failed"})

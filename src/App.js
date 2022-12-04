@@ -8,8 +8,6 @@ import Founders from "./molecules/founders";
 import FAQ from "./molecules/faq";
 import Footer from "./organisms/footer";
 
-import videoSrc from "./assets/smoke720.mp4";
-
 import "./App.css";
 
 function App() {
