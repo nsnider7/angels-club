@@ -163,7 +163,7 @@ class Minting extends Component {
 
       if (error && error.message) {
         console.log(error.message)
-        if (error.message == "MetaMask Tx Signature: User denied transaction signature.") {
+        if (error.message === "MetaMask Tx Signature: User denied transaction signature.") {
           mintingApp.setState({submitError : `Transaction Rejected`})
         } else {
           mintingApp.setState({submitError : "Mint Failed"})
